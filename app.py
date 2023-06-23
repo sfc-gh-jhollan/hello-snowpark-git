@@ -5,7 +5,7 @@ from snowflake.snowpark.functions import col
 
 def hello(session: Session) -> DataFrame:
     df = session.table("products")
-    return df.filter(col('ID') == 1)
+    return df
 
 # For local debugging
 if __name__ == "__main__":
