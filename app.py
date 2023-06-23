@@ -6,7 +6,7 @@ from snowflake.snowpark import Session
 
 
 def hello(session: Session) -> str:
-    return "Hello World!"
+    return "Hello World - v2!"
 
 
 # For local debugging. Be aware you may need to type-convert arguments if
