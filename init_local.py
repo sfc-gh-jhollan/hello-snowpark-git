@@ -4,6 +4,6 @@ def init(session) -> Session:
     df = session.create_dataframe([
             [1, 2, "abc"],
             [3, 4, "def"],
-            [6, 5, "ghi"]])
+            [6, 5, "ghi"]], schema=["ID", "Name", "Description"])
     df.write.mode("overwrite").save_as_table("products")
     return session
